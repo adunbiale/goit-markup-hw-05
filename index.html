@@ -467,77 +467,6 @@
       </section>
     </main>
 
-    <div class="modal-overlay">
-      <div class="modal">
-        <button type="button" class="modal-close-btn">
-          <svg class="modal-close-icon" width="8" height="8"> 
-            <use href="./images/icons.svg#icon-close-button"></use></svg>
-        </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
-
-          <label class="modal-label" for="user-name">Name</label>
-          <div class="input-wrap">
-            <input type="name" id="user-name" name="user-name" class="modal-input" required>
-            <svg class="modal-icon" width="12" height="12">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </div>
-
-          <label class="modal-label" for="user-phone">Phone</label>
-          <div class="input-wrap">
-            <input type="phone" id="user-phone" name="user-phone" class="modal-input" required>
-            <svg class="modal-icon" width="13" height="13">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-
-          <label class="modal-label" for="user-email">Email</label>
-          <div class="input-wrap">
-            <input type="email" id="user-email" name="user-email" class="modal-input">
-            <svg class="modal-icon" width="15" height="12">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
-
-          <div class="modal-comment-wrap">
-            <label class="modal-label" for="user-comment">Comment</label>
-            <textarea 
-            name="user-comment" 
-            id="user-comment" 
-            class="modal-comment" 
-            placeholder="Text input"></textarea>
-          </div>
-
-          <div class="input-wrap">
-            <input 
-            type="checkbox" 
-            id="policy" 
-            name="policy" 
-            class="modal-policy visually-hidden" v
-            alue="true">
-            <label class="modal-checkbox" for="policy">
-              <span>
-                <svg class="icon-click-box" width="10" height="8">
-                  <use href="./images/icons.svg#icon-click-box"></use>
-                </svg>
-              </span>
-            I accept the terms and conditions of the  
-            <a 
-            href="./index.html" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="privacy-policy-link"> Privacy Policy
-          </a>
-          </label>
-            
-          </div>
-
-          <button type="submit" class="submit-btn">Send</button>
-        </form>
-      </div>
-    </div>
-
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-wrap">
@@ -601,7 +530,6 @@
         <div class="footer-form-wrap">
           <p class="footer-text">Subscribe</p>
           <form class="footer-form">
-            <div class="footer-form-input-wrap">
               <label for="footer-email"></label>
               <input 
                   type="email" 
@@ -609,18 +537,86 @@
                   name="footer-email" 
                   class="footer-input" 
                   placeholder="E-mail">
-            </div>
             <button type="submit" class="footer-form-btn">
               Subscribe
               <svg class="footer-form-icon" width="24" height="20"> 
                 <use href="./images/icons.svg#icon-send"></use></svg>
             </button>
           </form>
-
-          
         </div>
-        
       </div>
     </footer>
+
+
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg class="modal-close-icon" width="8" height="8"> 
+            <use href="./images/icons.svg#icon-close-button"></use></svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="input-wrap">
+            <label class="modal-label" for="user-name">Name</label>
+            <input type="name" id="user-name" name="user-name" class="modal-input" required>
+            <svg class="modal-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          
+          <div class="input-wrap">
+            <label class="modal-label" for="user-phone">Phone</label>
+          
+            <input type="phone" id="user-phone" name="user-phone" class="modal-input" required>
+            <svg class="modal-icon" width="13" height="13">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="input-wrap">
+            <label class="modal-label" for="user-email">Email</label>
+          
+            <input type="email" id="user-email" name="user-email" class="modal-input">
+            <svg class="modal-icon" width="15" height="12">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <div class="modal-comment-wrap">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea 
+            name="user-comment" 
+            id="user-comment" 
+            class="modal-comment" 
+            placeholder="Text input"></textarea>
+          </div>
+
+          <div class="input-wrap">
+            <input 
+            type="checkbox" 
+            id="policy" 
+            name="policy" 
+            class="modal-policy visually-hidden" v
+            alue="true">
+            <label class="modal-checkbox" for="policy">
+              <span>
+                <svg class="icon-click-box" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click-box"></use>
+                </svg>
+              </span>
+            I accept the terms and conditions of the  
+            <a 
+            href="./index.html" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="privacy-policy-link"> Privacy Policy
+          </a>
+          </label>
+            
+          </div>
+
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
