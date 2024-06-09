@@ -521,14 +521,15 @@ margin-bottom: 16px;
 .footer-input {
     border: 1px solid #fff;
     background-color: transparent;
-border-radius: 4px;
-color: #fff;
-width: 264px;
-height: 40px;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-padding-left: 16px;
-letter-spacing: 0.04em;
-line-height: 2;
+    border-radius: 4px;
+    color: #fff;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    padding-left: 16px;
+    letter-spacing: 0.04em;
+    line-height: 2;
 }
 
 .footer-input::placeholder {
@@ -618,13 +619,13 @@ margin-left: 16px;
     margin-bottom: 24px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-width: 24px;
-height: 24px;
-background-color: #e7e9fc;
-cursor: pointer;
-padding: 0;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -633,25 +634,26 @@ border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
 }
 
-.modal-close-btn:hover > .modal-icon {
-    fill: #fff;
+.modal-close-btn:hover > .modal-close-icon {
+    fill: #ffffff;
 }
 
-.modal-close-btn:focus > .modal-icon {
-    fill: #fff;
+.modal-close-btn:focus > .modal-close-icon {
+    fill: #ffffff;
 }
 
 .modal-close-icon {
     fill: #2E2F42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
     font-weight: 500;
     max-width: 360px;
-text-align: center;
-color: #2e2f42;
-margin-bottom: 16px;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
 }
 
 .modal-input {
@@ -664,7 +666,8 @@ margin-bottom: 16px;
     padding-left: 38px;
     color: #2e2f42;
     outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
     border-color: #4d5ae5;
@@ -678,18 +681,18 @@ margin-bottom: 16px;
 .modal-label {
     display: block;
     font-weight: 400;
-font-size: 12px;
-line-height: 1.16667;
-letter-spacing: 0.04em;
-color: #8e8f99;
-line-height: 1.17;
-margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    line-height: 1.17;
+    margin-bottom: 4px;
 }
 
 .form-item-wrap {
     margin-bottom: 8px;
 }
-.
+
 .input-wrap {
     position: relative;
 }
@@ -699,7 +702,8 @@ margin-bottom: 4px;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon:focus {
@@ -725,28 +729,25 @@ margin-bottom: 4px;
     color: #2e2f42;
     outline: transparent;
     resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: border-color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-comment:focus {
     border-color: #4D5AE5;
 }
 
-.modal-comment::placeholder {
-}
 
-
-.modal-policy-wap {
+.modal-policy-wrap {
     margin-bottom: 24px;
 }
 
 .modal-checkbox {
-    display: flex;
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    background-color: #8e8f99;
+    color: #8e8f99;
 }
 
 .modal-checkbox-span {
@@ -759,10 +760,13 @@ margin-bottom: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
     fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-policy:checked + .modal-checkbox-span {
+.modal-policy:checked + .modal-checkbox > .modal-checkbox-span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -787,19 +791,20 @@ margin-bottom: 4px;
     display: block;
     margin: 0 auto;
     border-radius: 4px;
-padding: 16px 32px;
-min-width: 169px;
-height: 56px;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background-color: #4d5ae5;
-border: none;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-align-items: center;
-justify-content: center;
-color: #fff;
-cursor: pointer;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4d5ae5;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1); 
+    }
